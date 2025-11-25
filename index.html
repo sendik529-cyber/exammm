@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow та Z-index</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            width: 250px;
+            padding: 30px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .card1 {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .card2 {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .card3 {
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.5);
+            z-index: 3;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="card card1 bg-white">
+                <h5>z-index: 1</h5>
+            </div>
+
+            <div class="card card2 bg-white">
+                <h5>z-index: 2</h5>
+            </div>
+
+            <div class="card card3 bg-white">
+                <h5>z-index: 3</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
